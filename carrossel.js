@@ -19,3 +19,7 @@ function atualizarCarrossel() {
     bolinhas.forEach(b => b.classList.remove('ativa'));
     bolinhas[index].classList.add('ativa');
 }
+setInterval(() => { //: Função JavaScript  que executa repetidamente uma função ou trecho de codigo.
+    index = (index + 1) % bolinhas.length; //index + 1: Aumenta o valor do index em 1, ou seja, passa para o proximo item
+    atualizarCarrossel();
+}, 3000); // Muda a imagem a cada 3 segundos
