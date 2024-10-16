@@ -1,7 +1,29 @@
+*{
+    margin: 0;
+}
 body{
+
     background-color:rgb(92, 6, 6);
 }
+header{
+    background-color: rgba(245, 245, 220, 0.507);
+    text-align: center;
+    height: 90px;
+}
+@font-face {
+        font-family: 'ethnocentric';
+        src: url('ethnocentric-rg.otf') format('truetype');
+}
 
+h1{
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 2.5rem;
+    font-family: 'ethnocentric';
+    src: url('ethnocentric-rg.otf') format('truetype');
+    margin-bottom:3rem;
+    color:black
+}
 .carrossel{
     position: relative;
     max-width: 500px;
@@ -50,7 +72,7 @@ body{
 .bolinha{
     width: 10px; /*largura da bolinha*/
     height: 10px; /*altura da bolinha*/
-    background-color: rgba(19, 19, 19, 0.5); /*cor da bolinha*/
+    background-color: rgba(238, 228, 228, 0.5); /*cor da bolinha*/
     border-radius: 50%; /*círculo perfeito*/
     margin: 5px;
     cursor: pointer;
@@ -64,4 +86,12 @@ body{
     .carrossel{
         max-width: 50%;
     }
+}
+#art{
+    color: aliceblue;
+}
+footer{
+    margin-top: 200px;
+    text-align: center;
+    align-items: center;
 }
